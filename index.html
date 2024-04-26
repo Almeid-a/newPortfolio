@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>Dev Almeida</title>
+</head>
+<body class="overflow-x-hidden px-6 bg-gradient-to-r from-slate-950 to-slate-800">
+
+    <!-- HEADER -->
+    <nav class="flex justify-between absolute top-0 left-0 w-full bg-opacity-50 h-32 md:h-28">
+        <div class="flex items-start h-full px-5 my-5 md:mx-5 text-2xl sm:text-3xl md:text-4xl">
+            <h1 class="font-arvo text-purple-800">Dev</h1>
+            <h1 class="font-arvo text-white">Almeida</h1>
+        </div>
+        <div id="menu" class="hidden flex-col md:mt-6 text-2xl md:text-3xl lg:px-5 lg:mx-5 lg:flex">
+            <ul id="menu-itens" class="list-none text-center absolute right-6 top-14 lg:top-4 md:gap-5 lg:flex z-10 p-1">
+                <div id="menu-background" class="hidden lg:hidden absolute inset-0 bg-slate-800 opacity-90 -z-10 rounded-lg py-3"></div>
+                <li id="nav-animate"><a href="./projetos.html" class="font-arvo eas text-white text">Meus Projetos</a></li>
+                <li id="nav-animate" class="mt-2 md:mt-0"><a href="./certificados.html" class="font-arvo text-white text">Certificados</a></li>
+            </ul>
+        </div>
+        <button id="menu-toggle" class="lg:hidden mx-6 mb-16 md:mt-5 md:mx-10 z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-white menu-icon">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+        </button>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <div id="content-opacity">
+    <!-- INFORMAÇÕES BASICAS -->
+    <section class="mt-24 md:mt-36">
+        <div class="text-white w-full flex md:justify-center md:items-center">
+            <div class="text-center h-[60%] px-5 lg:w-[60%]">
+                <h1 class="font-arvo text-2xl md:text-3xl lg:animate-fall">Olá! Eu sou Gabriel de Almeida Rodrigues</h1>
+                <h1 class="font-arvo text-2xl md:text-3xl lg:animate-fall">Desenvolvedor Front-End</h1>
+                <p class="mt-6 md:mt-10 md:text-2xl font-open lg:animate-fall">Tenho 24 anos, recém formado no curso de Bacharelado em Engenharia de Software na 
+                Universidade Estadual de Ponta Grossa. <br> Meu foco atual é no desenvolvimento Front-End.</p>
+            </div>
+            <div class="mx-2 justify-center hidden px-5 md:rounded-s lg:flex lg:w-[40%]">
+                <img class="border-transparent rounded-3xl animate-slideright" src="./src/images/Testefoto12.png" alt="Gabriel imagem">
+            </div>
+        </div>
+    <!-- FIM INFORMAÇÕES BASICAS -->
+
+    <!-- BUTTONS REDES -->
+        <div class="text-white mt-10 md:mt-24 lg:mt-28">
+            <div class=" flex justify-center items-center">
+                <div class="font-arvo grid grid-cols-2 gap-5 md:gap-12 lg:gap-8 lg:flex lg:animate-slideleft">
+                    <a href="https://drive.google.com/file/d/1nv7D4huGuux_HqYlRIf6q_7bJua2Jnds/view?usp=sharing" target="_blank" class="btn-item">
+                        <button class="border rounded-2xl flex justify-center items-center p-2 w-36 sm:w-10 sm:h-8 md:w-52 md:h-12 lg:w-56 lg:h-16">
+                            <i class="fa-solid fa-file-export"></i>
+                            <p class="ml-2">Currículo</p>
+                        </button>
+                    </a>
+                    <a href="https://github.com/Almeid-a" target="_blank" class="btn-item">
+                        <button class="border rounded-2xl flex justify-center items-center p-2 w-36 md:w-52 md:h-12 lg:w-56 lg:h-16">
+                            <i class="fa-brands fa-github"></i>
+                            <p class="ml-2">GitHub</p>
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/almeiida/" target="_blank" class="btn-item">
+                        <button class="border rounded-2xl flex justify-center items-center p-2 w-36 md:w-52 md:h-12 lg:w-56 lg:h-16">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <p class="ml-2">Linkedin</p>
+                        </button>
+                    </a>
+                    <a href="javascript:void(0);" onclick="openWhatsApp()" class="btn-item">
+                        <button class="border rounded-2xl flex justify-center items-center p-2 w-36 md:w-52 md:h-12 lg:w-56 lg:h-16">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p class="ml-2">WhatsApp</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM BUTTONS REDES -->
+
+    <!-- SOBRE MIM -->
+    <section class="mt-10 md:mt-20 lg:mt-36 flex">
+        <div class="text-white text-center h-full w-full px-5 ml-2 mr-2">
+            <div class="text-2xl md:text-4xl">
+                <h1 class="text font-arvo">Sobre Mim</h1>
+            </div>
+            <div class="mt-5 md:text-2xl ">
+                <p class="font-open">Olá! Eu sou Gabriel de Almeida Rodrigues, um desenvolvedor Front-End morando em Ponta Grossa - PR. 
+                    Em 2023, completei meu Bacharelado em Engenharia de Software na Universidade Estadual de Ponta Grossa. Minha paixão 
+                    é projetar interfaces interativas e visualmente cativantes, buscando sempre oferecer experiências digitais memoráveis. </p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SOBRE MIM -->
+
+    <!-- EDUCAÇÃO -->
+    <!-- FIM EDUCAÇÃO -->
+
+    <!-- INFORMAÇÕES DE CONTATO -->
+    <section class="mt-10 md:mt-16 mb-10">
+        <div class="text-white h-full w-full px-1 ml-2 mr-2">
+            <div class="text-center font-bold text-2xl md:text-4xl">
+                <h1 class="font-arvo text">Informações e Contato</h1>
+            </div>
+            <div class="font-open text-center md:text-2xl">
+                <div class="mt-5">
+                    <div>
+                        <i class="fa-regular fa-calendar fa-lg"></i>
+                        <span class="ml-2">Data de Nascimento: 09 set 1999</span>
+                    </div>
+                    <div class="mt-2">
+                        <i class="fa-solid fa-flag"></i>
+                        <span class="ml-2">Nacionalidade: Brasileiro</span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="ml-2">Email: gabriel.almeidarod99@gmail.com</span>
+                    </div>
+                    <div class="mt-2">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                        <span class="ml-2">Endereço: Ponta Grossa, Paraná, Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM INFORMAÇÕES DE CONTATO -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Projetos Dev Almeida</title>
+</head>
+
+<body class="overflow-x-hidden px-6 bg-gradient-to-r from-slate-950 to-slate-800">
+
+     <!-- HEADER -->
+     <nav class="flex justify-between absolute top-0 left-0 w-full bg-opacity-50 h-32 md:h-28">
+        <div class="flex items-start h-full px-5 my-5 md:mx-5 text-2xl sm:text-3xl md:text-4xl">
+            <h1 class="font-arvo text-purple-800">Dev</h1>
+            <h1 class="font-arvo text-white">Almeida</h1>
+        </div>
+        <div id="menu" class="hidden flex-col md:mt-6 text-2xl md:text-3xl lg:px-5 lg:mx-5 lg:flex">
+            <ul id="menu-itens" class="list-none text-center absolute right-6 top-14 lg:top-4 md:gap-5 lg:flex z-10 p-1">
+                <div id="menu-background" class="hidden lg:hidden absolute inset-0 bg-slate-800 opacity-90 -z-10 rounded-lg py-3"></div>
+                <li id="nav-animate" class="mt-2 md:mt-0"><a href="./index.html" class="font-arvo text-white text">Home</a></li>
+                <li id="nav-animate" class="mt-2 md:mt-0"><a href="./certificados.html" class="font-arvo text-white text">Certificados</a></li>
+            </ul>
+        </div>
+        <button id="menu-toggle" class="lg:hidden mx-6 mb-16 md:mt-5 md:mx-10 z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-white menu-icon">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+        </button>
+    </nav>
+    <!-- FIM HEADER -->
+
+    <div id="content-opacity">
+    <section class="mt-20 md:mt-32 flex">
+        <div class="text-white text-center h-full w-full px-5 ml-2 mr-2">
+            <div class="font-arvo text-2xl text-white md:text-4xl ">
+                <span class="letter text">M</span>
+                <span class="letter text">E</span>
+                <span class="letter text">U</span>
+                <span class="letter text">S</span>
+                <span class="letter text"></span>
+                <span class="letter text">P</span>
+                <span class="letter text">R</span>
+                <span class="letter text">O</span>
+                <span class="letter text">J</span>
+                <span class="letter text">E</span>
+                <span class="letter text">T</span>
+                <span class="letter text">O</span>
+                <span class="letter text">S</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID PROJETOS -->
+    <section class="mt-10 mb-6 md:mt-16 flex justify-center items-center animate-slideleft">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <a href="https://hbo-series.vercel.app" target="_blank" class="project-item bg-gray-800 border-2 rounded-lg relative w-full h-[217px] md:h-[300px]">
+                <img src="./src/images/teste.jpg" alt="Imagem Projeto HBO" class="w-full h-[80%]">
+                <div class="p-2 h-[20%] text-white items-center flex justify-center">
+                    <h1 class="font-arvo tracking-wider">PROJETO HBO</h1>
+                    <div class="absolute inset-0 bg-black opacity-0 overlay"></div>
+                    <div class="description hidden text-center w-full h-full absolute top-0 left-0 px-2 text-wrap font-arvo text-xs md:text-base">
+                        <p>Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript.</p><br>
+                        <p>Trata-se de um site dedicado às séries de sucesso da HBO, fornecendo uma breve descrição de cada uma. Os fãs de séries encontrarão neste projeto uma maneira fácil e organizada de descobrir informações sobre seus programas favoritos, ajudando a tornar a experiência de assistir ainda mais envolvente e informativa.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://hamburgueria-project.vercel.app" target="_blank" class="project-item bg-gray-800 border-2 rounded-lg relative w-full h-[217px] md:h-[300px]">
+                <img src="./src/images/Hamburgueria.png" alt="Imagem Projeto Hamburgueria" class="w-full h-[80%]">
+                <div class="p-2 h-[20%] text-white items-center flex justify-center">
+                    <h1 class="font-arvo tracking-wider">PROJETO HAMBURGUERIA</h1>
+                    <div class="absolute inset-0 bg-black opacity-0 overlay"></div>
+                    <div class="description hidden text-center w-full h-full absolute top-0 left-0 px-2 text-wrap font-arvo text-xs md:text-base">
+                        <p>Este projeto foi desenvolvido utilizando HTML, CSS com a biblioteca Tailwind e JavaScript.</p><br>
+                        <p>Trata-se de um site para uma hamburgueria, projetado para simplificar o processo de pedido. Os clientes podem fazer seus pedidos de forma rápida e conveniente, e os pedidos são automaticamente encaminhados para o WhatsApp da hamburgueria, facilitando a comunicação e agilizando o atendimento.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/Almeid-a/cronometroApp" target="_blank" class="project-item bg-gray-800 border-2 rounded-lg relative w-full h-[217px] md:h-[300px]">
+                <img src="./src/images/Cronometro.jpeg" alt="Imagem Projeto Cronometro" class="w-full h-[80%]">
+                <div class="p-2 h-[20%] text-white items-center flex justify-center">
+                    <h1 class="font-arvo tracking-wider">APP - CRONOMETRO</h1>
+                    <div class="absolute inset-0 bg-black opacity-0 overlay"></div>
+                    <div class="description hidden text-center w-full h-full absolute top-0 left-0 px-2 text-wrap font-arvo text-xs md:text-base">
+                        <p>Este aplicativo foi desenvolvido utilizando React Native e gerenciamento de estado com AsyncStorage. Para a navegação entre telas, foi utilizado o Navigation Container.</p><br>
+                        <p>Trata-se de cronômetro onde cada tempo registrado é salvo em um histórico.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/Almeid-a/BiscoitoApp" target="_blank" class="project-item bg-gray-800 border-2 rounded-lg relative w-full h-[217px] md:h-[300px]">
+                <img src="./src/images/Biscoito da Sorte.jpeg" alt="Imagem Projeto Biscoito da Sorte" class="w-full h-[80%]">
+                <div class="p-2 h-[20%] text-white items-center flex justify-center">
+                    <h1 class="font-arvo tracking-wider">APP - BISCOITO DA SORTE</h1>
+                    <div class="absolute inset-0 bg-black opacity-0 overlay"></div>
+                    <div class="description hidden text-center w-full h-full absolute top-0 left-0 px-2 text-wrap font-arvo text-xs md:text-base">
+                        <p>Este aplicativo foi desenvolvido utilizando React Native e as propriedades de Component State.</p><br>
+                        <p>Ele simula um biscoito da sorte, exibindo mensagens aleatórias para o usuário. É uma aplicação leve e divertida para dispositivos móveis.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- FIM GRID PROJETOS -->
+    </div>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+    
+    
+</body>
+</html>
