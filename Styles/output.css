@@ -993,6 +993,10 @@ video {
   height: 100%;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -3040,6 +3044,14 @@ video {
 
   .md\:h-\[300px\] {
     height: 300px;
+  }
+
+  .md\:h-\[330px\] {
+    height: 330px;
+  }
+
+  .md\:h-\[350px\] {
+    height: 350px;
   }
 
   .md\:w-52 {
